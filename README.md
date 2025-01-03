@@ -18,6 +18,7 @@ Topic 7: Use Heap Sort to sort the library book reservation and borrowing system
 **1. Introduction**
 
 In today’s rapidly evolving digital landscape, libraries face numerous challenges in efficiently managing book reservations and borrowing systems. A common problem is the lack of streamlined processes to handle large volumes of data, leading to delays and inefficiencies in serving patrons. These inefficiencies can hinder the overall library experience, leaving users dissatisfied and reducing the utility of library resources. To address these issues, leveraging advanced data structures and algorithms becomes essential.
+
 Data structures are fundamental tools in computer science that organize and store data effectively. They provide a systematic way to manage, retrieve, and process information, ensuring that systems remain responsive and scalable. By integrating these structures into library management systems, libraries can enhance their operational efficiency, prioritize tasks, and improve user experiences. This essay explores various data structures and their applications in creating a robust library book reservation and borrowing system.
 
 **2. Features**
