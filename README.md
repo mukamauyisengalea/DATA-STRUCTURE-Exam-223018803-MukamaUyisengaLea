@@ -1,11 +1,17 @@
 **TOPIC: Project 48: Library Book Reservation and Borrowing System**
 
 Topic 1: Define data structures and discuss their importance in library book reservation and borrowing system.
+
 Topic 2: Implement Binary Search Tree (BST) and Heap to manage data in the library book reservation and borrowing system.
+
 Topic 3: Implement Circular Queue for library book reservation and borrowing system processing.
+
 Topic 4: Create Queue to manage a fixed number of orders in the library book reservation and borrowing system.
+
 Topic 5: Use Queue to track data dynamically in library book reservation and borrowing system.
+
 Topic 6: Implement a tree to represent hierarchical data in the library book reservation and borrowing system.
+
 Topic 7: Use Heap Sort to sort the library book reservation and borrowing system data based on priority.
 
 
