@@ -3,6 +3,8 @@
  
  **QUIZ-ENGINE PROJECT**
 
+ **INTRODUCTION**
+
 This C++ program is a simple console quiz program developed based on the principles of object-oriented programming (OOP). It supports two types of users—GuestUser and PremiumUser—with different permissions when responding to the quiz. The program also illustrates the usage of dynamic memory allocation, pointer handling, inheritance, and abstraction.
 
 **1.	Including Required Libraries**
