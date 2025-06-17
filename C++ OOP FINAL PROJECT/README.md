@@ -70,28 +70,43 @@ This function adds a new Question to a dynamically allocated array:
 
 7. Removing a Question
 
-void removeQuestion(Question*& questions, int& size, int index) This function removes a question at a specified index. It: Validates the index. Creates a new array one element smaller. Copies all questions except the one to remove. Deletes the old array and updates the size.
+void removeQuestion(Question*& questions, int& size, int index) 
+
+This function removes a question at a specified index. It: Validates the index. Creates a new array one element smaller. Copies all questions except the one to remove. Deletes the old array and updates the size.
 
 8. Creating Questions Manually
 
-Question createQuestion(...) This helper function simplifies question creation. It: 
+Question createQuestion(...) 
+
+This helper function simplifies question creation. It: 
 • Copies the prompt and choices using strncpy for safety. • Sets the correct answer index. Returns a Question object.
 
 9. Main Function: Execution Starts Here
 
 int main() The main function orchestrates the entire flow: 
+
 • Initializes a dynamic questions array with 0 size. 
-• Adds four sample questions using addQuestion and createQuestion. QuizUser** users = new QuizUser*[userCount]; An array of QuizUser pointers is created. The first is a GuestUser, and the second a PremiumUser for (int i = 0; i < userCount; i++) { users[i]->attemptQuiz(questions, qSize); }. 
+
+• Adds four sample questions using addQuestion and createQuestion. QuizUser** users = new QuizUser*[userCount]; An array of QuizUser pointers is created.
+
+The first is a GuestUser, and the second a PremiumUser for (int i = 0; i < userCount; i++) { users[i]->attemptQuiz(questions, qSize); }. 
+
 Each user takes the quiz according to their type. The virtual function ensures the correct version of attemptQuiz is called, thanks to polymorphism.
 
 10. Cleaning Up Memory.
 
 for (int i = 0; i < userCount;i++) 
+
 { 
+
 delete users[i];
+
 } 
+
 delete[] users; 
+
 delete[] questions;
+
 Memory allocated using new must be manually freed using delete. This prevents memory leaks, which is especially important in larger programs.
 
 Conclusion
