@@ -2,7 +2,7 @@
 
 This C++ program is a simple console quiz program developed based on the principles of object-oriented programming (OOP). It supports two types of users—**GuestUser** and **PremiumUser**—with different permissions when responding to the quiz. The program also illustrates the usage of **dynamic memory allocation**, **pointer handling**, **inheritance**, and **abstraction**.
 
-## 1. Including Required Libraries
+# 1. Including Required Libraries
 
 ```cpp
 #include <iostream>
@@ -18,7 +18,7 @@ using namespace std;
 
 This line tells the compiler to use the standard namespace, so we don’t have to prefix `std::` every time we use `cout`, `cin`, or other standard objects.
 
-## 2. Defining the Question Structure
+# 2. Defining the Question Structure
 
 ```cpp
 struct Question {
@@ -34,7 +34,7 @@ The `Question` structure represents a quiz question. It contains:
 * `choices`: four possible answer options
 * `correctIdx`: the index of the correct answer (from 0 to 3)
 
-## 3. Declaring the Abstract Base Class: QuizUser
+# 3. Declaring the Abstract Base Class: QuizUser
 
 ```cpp
 class QuizUser {
@@ -49,7 +49,7 @@ This abstract base class `QuizUser` contains:
 * A pure virtual function `attemptQuiz` that must be overridden by derived classes.
 * A virtual destructor for proper cleanup.
 
-## 4. GuestUser Class Definition
+# 4. GuestUser Class Definition
 
 ```cpp
 class GuestUser : public QuizUser {
@@ -69,7 +69,7 @@ public:
 
 A guest user can only attempt up to **3 questions**. If fewer questions are available, the limit is adjusted accordingly.
 
-## 5. PremiumUser Class Definition
+# 5. PremiumUser Class Definition
 
 ```cpp
 class PremiumUser : public QuizUser {
@@ -86,7 +86,7 @@ public:
 
 Premium users can attempt **all available questions**.
 
-## 6. Adding Questions Dynamically
+# 6. Adding Questions Dynamically
 
 ```cpp
 void addQuestion(Question*& questions, int& size, Question newQ)
@@ -99,7 +99,7 @@ This function adds a new `Question` to a dynamically allocated array:
 * Adds the new one.
 * Deletes the old array and updates size and pointer.
 
-## 7. Removing a Question
+# 7. Removing a Question
 
 ```cpp
 void removeQuestion(Question*& questions, int& size, int index)
@@ -112,7 +112,7 @@ Removes a question at the specified index:
 * Copies all except the one to remove.
 * Deletes the old array.
 
-## 8. Creating Questions Manually
+# 8. Creating Questions Manually
 
 ```cpp
 Question createQuestion(...)
@@ -124,7 +124,7 @@ This helper function:
 * Sets the correct answer index
 * Returns a `Question` object
 
-## 9. Main Function: Execution Starts Here
+# 9. Main Function: Execution Starts Here
 
 ```cpp
 int main()
@@ -152,7 +152,7 @@ for (int i = 0; i < userCount; i++) {
 
 * Polymorphism ensures the correct method is called based on user type
 
-## 10. Cleaning Up Memory
+# 10. Cleaning Up Memory
 
 ```cpp
 for (int i = 0; i < userCount; i++) {
@@ -164,7 +164,7 @@ delete[] questions;
 
 Manually freeing memory allocated using `new` is important to prevent memory leaks.
 
-## Conclusion
+# Conclusion
 
 This quiz program demonstrates key OOP concepts:
 
