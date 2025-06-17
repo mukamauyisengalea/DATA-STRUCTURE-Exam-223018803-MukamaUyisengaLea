@@ -113,7 +113,11 @@ Memory allocated using new must be manually freed using delete. This prevents me
 **Conclusion**
 
 This quiz program is a good example of proper usage of object-oriented programming principles, especially abstraction, inheritance, and polymorphism. The program also deals with dynamic memory using explicit allocation and deallocation. The Guest/Premium user type difference introduces real-world constraints and shows how the behavior of objects may vary with respect to class hierarchy. Overall, it's a well-structured and neat C++ implementation of a minimalist but flexible quiz system.
+
 **OR**
+
+**OTHER EXPLAINATION**
+
 # QUIZ-ENGINE PROJECT
 
 This C++ program is a simple console quiz program developed based on the principles of object-oriented programming (OOP). It supports two types of users—**GuestUser** and **PremiumUser**—with different permissions when responding to the quiz. The program also illustrates the usage of **dynamic memory allocation**, **pointer handling**, **inheritance**, and **abstraction**.
