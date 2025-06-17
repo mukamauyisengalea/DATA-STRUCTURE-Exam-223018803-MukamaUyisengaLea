@@ -8,9 +8,9 @@ This C++ program is a simple console quiz program developed based on the princip
 
 **1. Including Required Libraries**
 
-**#include <iostream>**
+#include <iostream>
 
-**#include <cstring>**
+#include <cstring>
 
 The program starts by including two header files. iostream is used for input and output operations such as cin and cout. cstring provides functions for string manipulation (e.g., strncpy) for copying character arrays. using namespace std; This line tells the compiler to use the standard namespace, so we don’t have to prefix std:: every time we use cout, cin, or other standard objects.
 
